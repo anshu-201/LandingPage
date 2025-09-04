@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>yourPrint</title>
+
+    <!-- PureCSS core + responsive grids -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+
+    <!-- WebAwesome (early) -->
+    <link rel="stylesheet" href="https://early.webawesome.com/[email protected]/dist/styles/webawesome.css" />
+    <script type="module" src="https://early.webawesome.com/[email protected]/dist/webawesome.loader.js"></script>
+
+    <!-- Icons (optional) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="pure-g align-center">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <a href="#" class="logo">YourPrint</a>
+        </div>
+        <nav class="pure-u-1 pure-u-md-2-3 nav-wrap">
+          <ul class="pure-menu-list nav-list">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#products" class="pure-menu-link">Products</a></li>
+            <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero + Carousel -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600&auto=format&fit=crop');">
+          <div class="hero-content">
+            <h1>Big Spring Sale</h1>
+            <p>Up to 50% off selected items.</p>
+            <button size="lg" variant="primary" id="shopNowBtn">Shop Now</button>
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1600&auto=format&fit=crop');">
+          <div class="hero-content">
+            <h1>Fresh Arrivals</h1>
+            <p>New styles dropped weekly.</p>
+            <button size="lg" variant="primary">Explore</button>
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1600&auto=format&fit=crop');">
+          <div class="hero-content">
+            <h1>Essentials</h1>
+            <p>Quality basics that last.</p>
+            <button size="lg" variant="primary">Browse</button>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="pure-button" id="prevSlide" aria-label="Previous">‹</button>
+          <button class="pure-button" id="nextSlide" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Product Grid -->
+    <main id="products" class="container">
+      <div class="pro">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">Handpicked picks you’ll love.</p>
+      </div>
+      <div class="pure-g product-grid">
+        <!-- 6 sample products -->
+        <div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+          <wa-card class="product-card">
+            <img slot="media" src="https://picsum.photos/seed/p1/600/400" alt="Product 1" />
+            <div slot="header">Minimal Backpack</div>
+            <div>$39.00</div>
+            <div slot="footer"><button variant="primary">Add to Cart</button></div>
+          </wa-card>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+          <wa-card class="product-card">
+            <img slot="media" src="https://picsum.photos/seed/p2/600/400" alt="Product 2" />
+            <div slot="header">Wireless Headphones</div>
+            <div>$89.00</div>
+            <div slot="footer"><button variant="primary">Add to Cart</button></div>
+          </wa-card>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+          <wa-card class="product-card">
+            <img slot="media" src="https://picsum.photos/seed/p3/600/400" alt="Product 3" />
+            <div slot="header">Classic Sneakers</div>
+            <div>$59.00</div>
+            <div slot="footer"><button variant="primary">Add to Cart</button></div>
+          </wa-card>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+          <wa-card class="product-card">
+            <img slot="media" src="https://picsum.photos/seed/p4/600/400" alt="Product 4" />
+            <div slot="header">Smart Watch</div>
+            <div>$129.00</div>
+            <div slot="footer"><button variant="primary">Add to Cart</button></div>
+          </wa-card>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+          <wa-card class="product-card">
+            <img slot="media" src="https://picsum.photos/seed/p5/600/400" alt="Product 5" />
+            <div slot="header">Cotton Tee</div>
+            <div>$19.00</div>
+            <div slot="footer"><button variant="primary">Add to Cart</button></div>
+          </wa-card>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+          <wa-card class="product-card">
+            <img slot="media" src="https://picsum.photos/seed/p6/600/400" alt="Product 6" />
+            <div slot="header">Denim Jacket</div>
+            <div>$79.00</div>
+            <div slot="footer"><button variant="primary">Add to Cart</button></div>
+          </wa-card>
+        </div>
+      </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <h2 class="section-title">Join our newsletter</h2>
+        <form class="pure-form pure-g" id="newsletterForm">
+          <div class="pure-u-1 pure-u-md-3-4">
+            <input class="pure-input-1" type="email" id="email" placeholder="Your email address" required />
+          </div>
+          <div class="pure-u-1 pure-u-md-1-4">
+            <button type="submit" class="pure-button pure-button-primary pure-input-1">Subscribe</button>
+          </div>
+        </form>
+        <p class="note" id="newsletterMsg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="container pure-g">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <h4>Shoply</h4>
+          <p>Quality goods. Great prices.</p>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3">
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3">
+          <p>&copy; <span id="year"></span> Shoply. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
